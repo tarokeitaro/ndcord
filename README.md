@@ -23,7 +23,7 @@ Then enter the virtual environment.
 
 **Linux/MacOS**
 ```bash
-source env/bin/activated
+source env/bin/activate
 ```
 **Windows Command Prompt**
 ```bash
