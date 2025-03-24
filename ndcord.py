@@ -46,7 +46,7 @@ def update_presence(username):
             activity_type=2,
             state=f"By: {artist}",
             details=title,
-            large_image='gey',
+            large_image='navidrome',
             large_text=f"{album} - {year}",
             # Remove this if you don't want to include the button
             buttons=[{
