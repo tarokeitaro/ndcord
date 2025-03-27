@@ -39,12 +39,15 @@ def update_presence(username):
     if now_playing_data:
         title = now_playing_data.get("title", "")
         artist = now_playing_data.get("artist", "")
+        album = now_playing_data.get("album", "")
+        year = now_playing_data.get("year", "")
 
         RPC.update(
+            activity_type=2,
             state=f"By: {artist}",
             details=title,
             large_image='navidrome',
-            large_text='Navidrome Streaming Service',
+            large_text=f"{album} - {year}",
             # Remove this if you don't want to include the button
             buttons=[{
                 "label": "Listen Now!",

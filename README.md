@@ -2,7 +2,7 @@
 Simple Discord Rich Presence for Navidrome
 
 ## How it works?
-Python will take Json data from Navidrome Rest API and then send it to Discord API.
+This python script takes Json data from Navidrome Rest API and then sends it to a Discord developer app via [pypresence](https://github.com/qwertyquerty/pypresence "pypresence").
 
 ## How to start?
 ### Get Discord client_id
@@ -15,7 +15,7 @@ git clone https://github.com/tarokeitaro/ndcord.git
 ```
 
 ### Virtual Environment (Optional)
-If you don't want to disturb your global environment your python system, you can create a virtual environment.
+If you don't want to disturb your global python environment, you can create a virtual environment.
 ```bash
 python -m venv env
 ```
@@ -35,11 +35,14 @@ source env\Scripts\Activate.ps1
 ```
 
 ### Download Requirements
-This project requires the library of `pypresence` and `requests`.
+This project requires the libraries `pypresence` and `requests`.
 ```bash
-pip install pypresence requests
+pip install requests
 ```
-
+Currently, this project depends on the latest development version of pypresence.
+```bash
+pip install https://github.com/qwertyquerty/pypresence/archive/master.zip
+```
 ### Change secret.json
 Fill in according to the data you have and this is mandatory!
 
